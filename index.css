@@ -1,9 +1,10 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-pink: hsl(275, 100%, 97%);
+  --greyish-purple: hsl(292, 16%, 49%);
+  --dark-purple: hsl(292, 42%, 14%);
 }
 
 *,
@@ -14,8 +15,80 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: hsl(275, 100%, 97%);
+html {
+  background-color: var(--light-pink);
+  font-size: 62.5%;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.3;
+}
+
+/* Accordion body */
+
+.accordion {
+  position: absolute;
+  background-color: var(--white);
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  width: 90%;
+  padding: 2rem;
+  border-radius: 0.8rem;
+}
+
+.accordion-section {
+  border-bottom: 1px solid var(--light-pink);
+}
+
+/* Accordion Heading */
+
+.accordion_heading {
+  display: flex;
+  font-size: 2rem;
+}
+
+.accordion_heading img {
+  margin-right: 2rem;
+  width: 2rem;
+}
+
+/* Accordion Label */
+
+.accordion-trigger {
+  background-color: var(--white);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  color: var(--dark-purple);
+  width: 100%;
+}
+
+.accordion-label {
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 1.3;
+}
+
+.accordion-icon {
+  margin-left: 5rem;
+}
+
+/* Accordion Panel */
+
+.accordion-panel {
+  font-size: 1.5rem;
+  color: var(--greyish-purple);
+  margin: 2rem 0;
+}
+
+/* Background Banner */
+.banner {
+  background-image: url(./assets/images/background-pattern-desktop.svg);
+  background-position: bottom;
+  background-repeat: none;
+  background-size: cover;
+  height: 30vh;
 }
 
 @media screen and (max-width: 425px) {
@@ -24,6 +97,14 @@ body {
     background-position: bottom;
     background-repeat: none;
     background-size: cover;
-    height: 25vh;
+    height: 30vh;
   }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
