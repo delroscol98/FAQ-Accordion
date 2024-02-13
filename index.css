@@ -1,0 +1,29 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(275, 100%, 97%);
+}
+
+@media screen and (max-width: 425px) {
+  .banner {
+    background-image: url(./assets/images/background-pattern-mobile.svg);
+    background-position: bottom;
+    background-repeat: none;
+    background-size: cover;
+    height: 25vh;
+  }
+}
