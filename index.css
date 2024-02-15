@@ -64,7 +64,8 @@ html {
   width: 100%;
 }
 
-.accordion-trigger:hover {
+.accordion-trigger:hover,
+.accordion-trigger:focus {
   cursor: pointer;
   text-decoration: underline;
 }
