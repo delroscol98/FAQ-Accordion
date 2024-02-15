@@ -16,6 +16,7 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="./index.css" />
+    <script defer src="./index.js"></script>
   </head>
   <body>
     <main>
@@ -25,7 +26,10 @@
           <h1>FAQs</h1>
         </section>
 
-        <section class="accordion-section">
+        <section
+          class="accordion-section"
+          aria-labelledby="accordion-section-1"
+        >
           <h2>
             <button
               type="button"
@@ -48,6 +52,7 @@
             id="accordion-panel-1"
             aria-labelledby="accordion-panel-1"
             class="accordion-panel"
+            hidden
           >
             <p>
               Frontend Mentor offers realistic coding challenges to help
@@ -58,14 +63,17 @@
           </article>
         </section>
 
-        <section class="accordion-section">
+        <section
+          class="accordion-section"
+          aria-labelledby="accordion-section-2"
+        >
           <h2>
             <button
               type="button"
               aria-expanded="false"
               class="accordion-trigger"
-              aria-controls="accordion-panel-1"
-              id="accordion-label-1"
+              aria-controls="accordion-panel-2"
+              id="accordion-label-2"
             >
               <span class="accordion-label"> Is Frontend Mentor free? </span>
               <img
@@ -76,9 +84,10 @@
             </button>
           </h2>
           <article
-            id="accordion-panel-1"
-            aria-labelledby="accordion-panel-1"
+            id="accordion-panel-2"
+            aria-labelledby="accordion-panel-2"
             class="accordion-panel"
+            hidden
           >
             <p>
               Yes, Frontend Mentor offers both free and premium coding
@@ -88,14 +97,17 @@
           </article>
         </section>
 
-        <section class="accordion-section">
+        <section
+          class="accordion-section"
+          aria-labelledby="accordion-section-3"
+        >
           <h2>
             <button
               type="button"
               aria-expanded="false"
               class="accordion-trigger"
-              aria-controls="accordion-panel-1"
-              id="accordion-label-1"
+              aria-controls="accordion-panel-3"
+              id="accordion-label-3"
             >
               <span class="accordion-label">
                 Can I use Frontend Mentor projects in my portfolio?
@@ -108,9 +120,10 @@
             </button>
           </h2>
           <article
-            id="accordion-panel-1"
-            aria-labelledby="accordion-panel-1"
+            id="accordion-panel-3"
+            aria-labelledby="accordion-panel-3"
             class="accordion-panel"
+            hidden
           >
             <p>
               Yes, you can use projects completed on Frontend Mentor in your
@@ -120,14 +133,17 @@
           </article>
         </section>
 
-        <section class="accordion-section">
+        <section
+          class="accordion-section"
+          aria-labelledby="accordion-section-4"
+        >
           <h2>
             <button
               type="button"
               aria-expanded="false"
               class="accordion-trigger"
-              aria-controls="accordion-panel-1"
-              id="accordion-label-1"
+              aria-controls="accordion-panel-4"
+              id="accordion-label-4"
             >
               <span class="accordion-label">
                 How can I get help if I'm stuck on a Frontend Mentor challenge?
@@ -140,9 +156,10 @@
             </button>
           </h2>
           <article
-            id="accordion-panel-1"
-            aria-labelledby="accordion-panel-1"
+            id="accordion-panel-4"
+            aria-labelledby="accordion-panel-4"
             class="accordion-panel"
+            hidden
           >
             <p>
               The best place to get help is inside Frontend Mentor's Discord
